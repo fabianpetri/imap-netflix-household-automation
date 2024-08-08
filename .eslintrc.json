@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base"
+  ],
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": [
+      "./tsconfig.json"
+    ]
+  },
+  "rules": {
+    "no-new": 0
+  }
+}
+
