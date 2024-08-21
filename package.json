@@ -1,8 +1,9 @@
 {
   "name": "imap-netflix-household-automation",
+  "author": "ducphu0ng",
   "version": "1.0.0",
   "description": "IMAP Netflix Household automation",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -10,9 +11,7 @@
     ".": "./dist/index.js"
   },
   "scripts": {
-    "start": "tsc --noEmit && tsx --import=extensionless/register src/index.ts",
-    "lint": "eslint src",
-    "lint:fix": "eslint --fix src"
+    "start": "tsc --noEmit && tsx --import=extensionless/register src/index.ts"
   },
   "extensionless": {
     "lookFor": [
@@ -32,17 +31,9 @@
     "primary location",
     "automation"
   ],
-  "author": "ducphu0ng",
   "devDependencies": {
     "@types/imap": "^0.8.40",
     "@types/node": "^22.1.0",
-    "@typescript-eslint/eslint-plugin": "^7.3.1",
-    "@typescript-eslint/parser": "^7.13.1",
-    "airbnb": "^0.0.2",
-    "eslint": "^8.57.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^18.0.0",
-    "eslint-plugin-import": "^2.29.1",
     "tsx": "^4.16.5",
     "typescript": "^5.5.4"
   },
