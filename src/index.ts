@@ -9,6 +9,7 @@ const imap = new Imap({
   port: Number(process.env.IMAP_PORT) ?? 993,
   tls: true,
   tlsOptions: { rejectUnauthorized: false },
+  connTimeout: 3_600_000, // set to 1 Hour to reconnect, if Connection is lost
   keepalive: {
     interval: 10000, // Send NOOP commands every 10 seconds
     idleInterval: 300000, // Re-send IDLE command every 5 minutes
