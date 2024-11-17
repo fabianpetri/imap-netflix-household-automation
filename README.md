@@ -59,7 +59,7 @@ Don't forget to enable IMAP in your email provider. For example, in Gmail, go to
    ```
 That’s it! Docker will automatically install all the necessary dependencies and start the script.
 
-If you used the -d (detach) option with docker compose up, you can view the script's output — as shown in [🚀 Usage](#-usage) — by using the following command: [docker compose logs reference](https://docs.docker.com/reference/cli/docker/compose/logs/)
+You can view the script's output — as shown in [🚀 Usage](#-usage) — by using the following command: [docker compose logs reference](https://docs.docker.com/reference/cli/docker/compose/logs/)
 ```sh
 docker compose logs -f
 ```
