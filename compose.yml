@@ -6,7 +6,5 @@ services:
     ipc: host
     network_mode: host
     restart: unless-stopped
-    volumes:
-      - .:/app
-    command: /bin/sh -c "yarn install && yarn start"
+    command: /bin/sh -c "if [ ! -d '/app/.git' ]; then git clone https://github.com/fabianpetri/imap-netflix-household-automation.git /app; fi && cd /app && yarn install && yarn start"
     stdin_open: true
