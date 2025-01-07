@@ -6,5 +6,7 @@ services:
     ipc: host
     network_mode: host
     restart: unless-stopped
+    env_file:
+      - stack.env
     command: /bin/sh -c "if [ ! -d '/app/.git' ]; then git clone https://github.com/fabianpetri/imap-netflix-household-automation.git /app; fi && cd /app && yarn install && yarn start"
     stdin_open: true
